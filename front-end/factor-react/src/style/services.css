@@ -109,6 +109,9 @@
     }
 }
 @media screen and (max-width: 550px) {
+    .table{
+        position: relative;
+    }
     .main_sections_tittle{ 
         margin-bottom: 20px;
     }
