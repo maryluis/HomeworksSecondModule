@@ -1,0 +1,159 @@
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.portfolio_top {
+    display: flex;
+    justify-content: space-between;
+    width: 970px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.portfolio_top .portfolio_top_description {
+font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+color: #7E7E7E;
+margin-right: 0;
+}
+.portfolio_nav {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio_content {
+    margin: 0px 5px 15px 5px;
+}
+.portfolio_content_main img {
+    width: 310px;
+    height: 396px;
+    z-index: -1;
+    position: absolute;
+}
+
+.portfolio_content_main {
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: auto;
+    width: 310px;
+    height: 396px;
+    margin: 0px 10px;
+    position: relative;
+}
+.portfolio_content:hover .portfolio_content_main{
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 314px;
+    transition: .5s;
+}
+
+.landing {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #989898;
+}
+.portfolio_content_name {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.portfolio_content_main_text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.portfolio_content_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #F5F7F7;;
+    height: 70px;
+    padding-top: 10px;
+    width: 310px;
+    margin: 0px 10px 30px 10px;
+}
+.portfolio_content_bottom span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7E7E7E;
+    width: 254px;
+    height: 40px;
+}
+.portfolio_content_bottom img {
+    position: absolute;
+    left: 80px;
+    top: 75px;
+    display: none;
+}
+.portfolio_content:hover .portfolio_content_bottom img {
+    display: flex;
+}
+.portfolio_content:hover .portfolio_content_bottom{
+    height: 152px;
+    transition: .5s;
+}
+.all_progects {
+    display: flex;
+    height: 68px;
+    align-items: center;
+    border: 2px solid #FFCA00;
+    width: 50vw;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.all_progects span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202020;
+    text-decoration: none;
+}
+@media screen and (max-width: 1200px) {
+    .portfolio_nav {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .portfolio_top .portfolio_top_description {
+        display: none;
+    }
+    .portfolio_top {
+        margin-left: 20px ;
+        width: auto;
+    }
+    .portfolio_content_main {
+        margin: 0px;
+    }
+    .portfolio_content_bottom {
+        margin: 0%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .portfolio {
+      flex-basis: 250px;
+    }
+    .portfolio_content_bottom span{
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    .portfolio_content_main,  .portfolio_content_main img, 
+    .portfolio_content_bottom {
+        width: 100%;
+    }
+}

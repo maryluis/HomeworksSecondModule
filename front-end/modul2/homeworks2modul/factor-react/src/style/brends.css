@@ -1,0 +1,32 @@
+.brends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+}
+.brends_picture {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.brends .brends_picture div {
+    background-color: #F5F7F7;
+    width: 228px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1300px)  {
+    .brends_picture {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

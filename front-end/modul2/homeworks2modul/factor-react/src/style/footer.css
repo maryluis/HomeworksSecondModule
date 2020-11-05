@@ -1,0 +1,62 @@
+footer {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    height: 110px;
+    align-items: center;
+}
+.footer_input {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .guarantee {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    color: #7E7E7E;
+}
+footer .post svg{
+    margin-right: 5px;
+}
+footer .post a {
+    font-family: "Roboto", sans-serif;
+    font-style: medium;
+    font-size: 16px;
+    line-height: 19px;
+    vertical-align: top;
+    color: #ffffff;
+    text-decoration: none;
+}
+footer .fb {
+    display: flex;
+}
+footer .fb a {
+    width: 48px;
+    height: 48px;
+    background-color: #706e6e;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+footer.fb svg path {
+    width: 9px;
+    height: 16px;
+}
+@media screen and (max-width: 1700px) {
+    footer .footer_input {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .post {
+        display: none;
+    }
+    footer .guarantee {
+        display: none;
+    }
+}
